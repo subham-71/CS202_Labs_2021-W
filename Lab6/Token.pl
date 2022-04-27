@@ -1,8 +1,8 @@
-# print ("Enter input text : ") ; 
-$text = "I am teaching a course";
+print ("Enter input text : ") ; 
+$text = <STDIN>;
 
-# print ("Enter demlimiting character : ") ; 
-$dm = "a";
+print ("Enter demlimiting character : ") ; 
+$dm = <STDIN>;
 chomp($dm);
 
 @tokens = split(/$dm/, $text) ;

@@ -11,7 +11,7 @@ while ( $line = <$fh> ) {
     }
 
 }
-print "\n\nThe count is $count \n\n";
+print "\n\nCount is $count lines \n\n";
 close($fh);
 
 

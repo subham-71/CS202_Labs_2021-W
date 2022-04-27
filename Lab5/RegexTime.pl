@@ -11,7 +11,7 @@ $time = <STDIN>;
 #           check for space , then am/pm
 
           
-if($time =~ /\b(0?[1-9]|1[0-2])\.[0-5]?[0-9]\s[ap]m\b/){
+if($time =~ /\b(0?[0-9]|1[0-2])\.[0-5]?[0-9]\s[ap]m\b/){
     print ("TRUE \n") ;
 }
 else{

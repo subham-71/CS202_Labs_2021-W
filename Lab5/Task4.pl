@@ -13,7 +13,6 @@ while ( $line = <$fh> ) {
         # to detect single words in double quotes
         if ($words[$i] =~ /"(\w*)"/ ) {
             print "$1 \n";
-
             $count=$count+1;
         }
         
@@ -31,8 +30,7 @@ while ( $line = <$fh> ) {
     }
 }
 
-
-print "\n\nThe count is $count \n\n";
+# print "\n\nThe count is $count \n\n";
 close($fh);
 
 

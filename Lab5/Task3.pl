@@ -17,7 +17,7 @@ while ( $line = <$fh> ) {
     
 
 }
-print "\n\nThe count is $count \n\n";
+print "\n\nThere are $count words with a capital letters in the middle.  \n\n";
 close($fh);
 
 

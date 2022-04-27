@@ -18,5 +18,5 @@ while ( $line = <$fh> ) {
 
 }
 
-print "\n\nThe count is $count \n\n";
+print "\n\nThere are $count  words that start with a and have the same 2nd and 3rd character. \n\n";
 close($fh);

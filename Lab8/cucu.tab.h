@@ -34,8 +34,8 @@
 /* Undocumented macros, especially those whose name start with YY_,
    are private implementation details.  Do not rely on them.  */
 
-#ifndef YY_YY_Y_TAB_H_INCLUDED
-# define YY_YY_Y_TAB_H_INCLUDED
+#ifndef YY_YY_CUCU_TAB_H_INCLUDED
+# define YY_YY_CUCU_TAB_H_INCLUDED
 /* Debug traces.  */
 #ifndef YYDEBUG
 # define YYDEBUG 0
@@ -49,19 +49,48 @@ extern int yydebug;
 # define YYTOKENTYPE
   enum yytokentype
   {
-    token_a = 258,
-    token_b = 259,
-    newline = 260
+    INT_TYPE = 258,
+    CHAR_TYPE = 259,
+    IF = 260,
+    ELSE = 261,
+    WHILE = 262,
+    RETURN = 263,
+    EQUALS = 264,
+    EQ = 265,
+    NOT_EQ = 266,
+    LESS_THAN = 267,
+    LESS_THAN_EQ = 268,
+    GRTR_THAN = 269,
+    GRTR_THAN_EQ = 270,
+    LEFT_PAREN = 271,
+    RIGHT_PAREN = 272,
+    LEFT_CURLY_BRACE = 273,
+    RIGHT_CURLY_BRACE = 274,
+    PLUS = 275,
+    MINUS = 276,
+    DIVIDE = 277,
+    MULTIPLY = 278,
+    COMMA = 279,
+    SEMICOLON = 280,
+    STR = 281,
+    VAR = 282,
+    INT = 283
   };
 #endif
-/* Tokens.  */
-#define token_a 258
-#define token_b 259
-#define newline 260
 
 /* Value type.  */
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
-typedef int YYSTYPE;
+union YYSTYPE
+{
+#line 10 "cucu.y"
+
+    int n;
+    char *str;
+
+#line 91 "cucu.tab.h"
+
+};
+typedef union YYSTYPE YYSTYPE;
 # define YYSTYPE_IS_TRIVIAL 1
 # define YYSTYPE_IS_DECLARED 1
 #endif
@@ -71,4 +100,4 @@ extern YYSTYPE yylval;
 
 int yyparse (void);
 
-#endif /* !YY_YY_Y_TAB_H_INCLUDED  */
+#endif /* !YY_YY_CUCU_TAB_H_INCLUDED  */

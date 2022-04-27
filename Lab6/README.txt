@@ -3,9 +3,7 @@ perl Truck.pl
 perl Gene.pl
 perl Token.pl
 
-Please give input to the programs from the terminal 
-and press "enter" to view the output.
-
+Please give input to the programs from the terminal and press "enter" to view the output.
 
 Assumptions :
 
